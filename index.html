@@ -95,6 +95,25 @@
 
 
     </div>
+
+    <div id="customAlert">
+        <p id="alertMessage"></p>
+        <button onclick="hideAlert()">Sign Up</button>
+    </div>
+    
+    <script>
+        function showAlert(message) {
+            document.getElementById("alertMessage").textContent = message;
+            document.getElementById("customAlert").style.display = "block";
+        }
+    
+        function hideAlert() {
+            document.getElementById("customAlert").style.display = "none";
+        }
+    
+        showAlert("Sign Up for 15% Off*"); // Call your custom alert
+    
+    </script>
   
 </body>
 
