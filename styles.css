@@ -6,15 +6,31 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
-header {
-    display: block;
-    margin: auto;
-    background-color: rgb(239, 239, 239);
-    height:200px;
-    margin:50px;
-    border-radius: 20px;
+nav {
+    width:100%;
+    color:rgb(0, 0, 0);
+    margin:20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap:100px;
+    align-items: center;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+    color:black;
+   
+}
+
+.left, .right{
+    display: flex;
+    flex-direction: row;
+    gap:20px;
 }
 
 header h1 {
@@ -51,9 +67,6 @@ header h1 {
     height:auto;
 }
 
-.item {
-
-}
 
 .item h3 {
     font-weight: 400;
